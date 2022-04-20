@@ -32,8 +32,8 @@
     "url": "https://github.com/planningcenter/sweetalert2/issues"
   },
   "devDependencies": {
-    "microbundle": "^0.13.0",
-    "node-sass": "^4.13.1",
+    "microbundle": "^0.14.2",
+    "node-sass": "^7.0.1",
     "sweetalert2": "^10.15.0"
   },
   "dependencies": {
