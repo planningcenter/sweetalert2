@@ -2,8 +2,8 @@
   "name": "@planningcenter/sweetalert2",
   "version": "1.0.0-beta.2",
   "description": "Planning Center Opinions for SweetAlert2",
-  "author": "Michael Chan <mijoch@gmail.com>",
-  "homepage": "https://github.com/planningcenter/design#readme",
+  "author": "Front End Systems Engineering <frontend@planningcenter.com>",
+  "homepage": "https://github.com/planningcenter/sweetalert2",
   "license": "MIT",
   "main": "dist/sweetalert2.js",
   "files": [
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planningcenter/design.git"
+    "url": "git+https://github.com/planningcenter/sweetalert2.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -29,7 +29,7 @@
     "sweetalert2": ">=10"
   },
   "bugs": {
-    "url": "https://github.com/planningcenter/design/issues"
+    "url": "https://github.com/planningcenter/sweetalert2/issues"
   },
   "devDependencies": {
     "microbundle": "^0.13.0",
@@ -38,6 +38,5 @@
   },
   "dependencies": {
     "node-sass-tilde-importer": "^1.0.2"
-  },
-  "gitHead": "ebc341be61721088b5b864f66198e4d3926ef34e"
+  }
 }
