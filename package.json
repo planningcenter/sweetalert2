@@ -1,9 +1,9 @@
 {
   "name": "@planningcenter/sweetalert2",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0",
   "description": "Planning Center Opinions for SweetAlert2",
-  "author": "Michael Chan <mijoch@gmail.com>",
-  "homepage": "https://github.com/planningcenter/design#readme",
+  "author": "Front End Systems Engineering <frontend@planningcenter.com>",
+  "homepage": "https://github.com/planningcenter/sweetalert2",
   "license": "MIT",
   "main": "dist/sweetalert2.js",
   "files": [
@@ -16,28 +16,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planningcenter/design.git"
+    "url": "git+https://github.com/planningcenter/sweetalert2.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
+    "test": "jest",
     "build:css": "node-sass src/sweetalert2.scss --output-style compressed -o css --importer=node_modules/node-sass-tilde-importer",
     "build:js": "microbundle src/sweetalert2.js -f cjs",
-    "prepublish": "npm run build",
-    "build": "npm run build:css && npm run build:js"
+    "prepublish": "yarn run build",
+    "build": "yarn run build:css && yarn run build:js"
   },
   "peerDependencies": {
     "sweetalert2": ">=10"
   },
   "bugs": {
-    "url": "https://github.com/planningcenter/design/issues"
+    "url": "https://github.com/planningcenter/sweetalert2/issues"
   },
   "devDependencies": {
-    "microbundle": "^0.13.0",
-    "node-sass": "^4.13.1",
+    "@types/jest": "^27.4.1",
+    "eslint": "^8.13.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "jest": "^27.5.1",
+    "microbundle": "^0.14.2",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.6.2",
     "sweetalert2": "^10.15.0"
   },
   "dependencies": {
     "node-sass-tilde-importer": "^1.0.2"
-  },
-  "gitHead": "ebc341be61721088b5b864f66198e4d3926ef34e"
+  }
 }
