@@ -22,8 +22,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1",
     "build:css": "node-sass src/sweetalert2.scss --output-style compressed -o css --importer=node_modules/node-sass-tilde-importer",
     "build:js": "microbundle src/sweetalert2.js -f cjs",
-    "prepublish": "npm run build",
-    "build": "npm run build:css && npm run build:js"
+    "prepublish": "yarn run build",
+    "build": "yarn run build:css && yarn run build:js"
   },
   "peerDependencies": {
     "sweetalert2": ">=10"
