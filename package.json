@@ -19,7 +19,7 @@
     "url": "git+https://github.com/planningcenter/sweetalert2.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
+    "test": "jest",
     "build:css": "node-sass src/sweetalert2.scss --output-style compressed -o css --importer=node_modules/node-sass-tilde-importer",
     "build:js": "microbundle src/sweetalert2.js -f cjs",
     "prepublish": "yarn run build",
@@ -32,6 +32,8 @@
     "url": "https://github.com/planningcenter/sweetalert2/issues"
   },
   "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
     "microbundle": "^0.14.2",
     "node-sass": "^7.0.1",
     "sweetalert2": "^10.15.0"
